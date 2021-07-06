@@ -12,7 +12,7 @@ https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal
  
 4) kubectl apply -f demo-svc-deploy.yaml
 
-5) kubectl apply -f default-svc-deploy.yaml
+5) kubectl apply -f default-http-backend.yaml
 
 6) kubectl apply -f demo-ingress.yaml
 
