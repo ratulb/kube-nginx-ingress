@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: demo-ingress-example
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: demo.ingress.example
+    http:
+      paths:
+      - path: /service1
+        backend:
+          serviceName: demo-service
+          servicePort: 8080
+      - path: /service2
+        backend:
+          serviceName: demo-service
+          servicePort: 8080
+      - path: /
+        backend:
+          serviceName: demo-service
+          servicePort: 8080
+
