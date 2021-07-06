@@ -7,4 +7,17 @@ Steps:
 https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal
 
 2) Check out this repository - git clone https://github.com/ratulb/kube-nginx-ingress.git
-3) 
+
+3) cd kube-nginx-ingress/
+ 
+4) kubectl apply -f demo-svc-deploy.yaml
+
+5) kubectl apply -f default-svc-deploy.yaml
+
+6) kubectl apply -f demo-ingress.yaml
+
+7) Find the NodePort port - kubectl -n ingress-nginx get svc
+
+8) Put the entry '127.0.0.1 demo.ingress.example' in /etc/hosts
+
+9) curl demo.ingress.example:[NodePort port]/service1[service2, xxx]
