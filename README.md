@@ -23,3 +23,5 @@ https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal
 9) curl demo.ingress.example:[NodePort port]/service1[service2, xxx]
 
 10) demo.ingress.example:[NodePort port]/xxxx - should show response from default-backend-service
+
+
